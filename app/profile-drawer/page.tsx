@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { useState } from "react";
 import { ProgressiveBlur } from "@/components/motion-primitives/progressive-blur";
+import Footer from "@/components/common/footer";
 
 const ProfileDrawer = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -113,13 +114,14 @@ const ProfileDrawerPage = () => {
     return (
         <div className="max-w-7xl mx-auto px-4 md:px-10">
 
-            <div className="min-h-screen flex justify-center items-center" >
+            <div className="min-h-screen flex justify-center items-center relative" >
                 <ProfileDrawer />
             </div>
 
             <div className="absolute top-4 right-4">
                 <ModeToggle />
             </div>
+            <Footer />
         </div>
     )
 }

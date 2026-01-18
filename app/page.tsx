@@ -3,6 +3,7 @@ import { Dot } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react/jsx-runtime";
+import Footer from "@/components/common/footer";
 
 export default function Home() {
   const componentsLinks: ComponentAccordion[] = [
@@ -17,9 +18,9 @@ export default function Home() {
   ]
 
   return (
-    <div className="min-h-screen max-w-7xl mx-auto py-40 px-4 md:px-10">
+    <div className="min-h-screen max-w-7xl mx-auto py-40 px-4 md:px-10 relative">
       <div>
-        <h1 className="text-3xl text-center font-buda ">UI components for people who ship...</h1>
+        <h1 className="text-2xl md:text-3xl text-center font-buda ">UI components for people who ship... <span className="text-lg md:text-xl" >(more to coming)</span></h1>
       </div>
       <div className="flex-1 flex flex-col justify-center items-center gap-4 m-10" >
         {componentsLinks.map((component) => (
@@ -29,6 +30,7 @@ export default function Home() {
       <div className="absolute top-4 right-4">
         <ModeToggle />
       </div>
+      <Footer />
     </div>
   );
 }
