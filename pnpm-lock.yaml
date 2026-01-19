@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@paper-design/shaders-react':
+        specifier: ^0.0.70
+        version: 0.0.70(@types/react@19.2.8)(react@19.2.3)
       '@radix-ui/react-slot':
         specifier: ^1.2.4
         version: 1.2.4(@types/react@19.2.8)(react@19.2.3)
@@ -428,6 +431,18 @@ packages:
   '@nolyfill/is-core-module@1.0.39':
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
+
+  '@paper-design/shaders-react@0.0.70':
+    resolution: {integrity: sha512-9DkZXcyehorsZzyWnYV3OOO1i7rF7a5CkasjKJ1h1tLlY3JJLUEX9W+gZz7JgWHyvCimUu0OSq1sbHTb2OntRw==}
+    peerDependencies:
+      '@types/react': ^18 || ^19
+      react: ^18 || ^19
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  '@paper-design/shaders@0.0.70':
+    resolution: {integrity: sha512-d9LQcmPoEm3+Y6Vuz7cvsnSelfTM5QD63yQ3ddLM7QGYfoSjbQiU38kzjA4O3oCQ6zv23o/IGvGA8k9S/L+kZw==}
 
   '@radix-ui/react-compose-refs@1.1.2':
     resolution: {integrity: sha512-z4eqJvfiNnFMHIIvXP3CY57y2WJs5g2v3X0zm9mEJkrkNv4rDxu+sg9Jh8EkXyeqBkB7SOcboo9dMVqhyrACIg==}
@@ -2347,6 +2362,15 @@ snapshots:
       fastq: 1.20.1
 
   '@nolyfill/is-core-module@1.0.39': {}
+
+  '@paper-design/shaders-react@0.0.70(@types/react@19.2.8)(react@19.2.3)':
+    dependencies:
+      '@paper-design/shaders': 0.0.70
+      react: 19.2.3
+    optionalDependencies:
+      '@types/react': 19.2.8
+
+  '@paper-design/shaders@0.0.70': {}
 
   '@radix-ui/react-compose-refs@1.1.2(@types/react@19.2.8)(react@19.2.3)':
     dependencies:

@@ -15,14 +15,23 @@ export default function Home() {
       videoUrl: "https://res.cloudinary.com/dnvl8mqba/video/upload/v1768752010/Elite-ui/Profile-Viewer_dffj1e.mp4",
       avatarUrl: "/elitedev.png",
     },
+
+    {
+      name: "Logo Shader",
+      href: "/logo-shader",
+      description: ["Animated", "Logo Shader", "Default",],
+      ImageUrl: "/images/component1/image1.png",
+      videoUrl: "https://res.cloudinary.com/dnvl8mqba/video/upload/v1768839559/Elite-ui/text-shader_nuj61t.mp4",
+      avatarUrl: "/elitedev.png",
+    },
   ]
 
   return (
     <div className="min-h-screen max-w-7xl mx-auto py-40 px-4 md:px-10 relative">
       <div>
-        <h1 className="text-2xl md:text-3xl text-center font-buda ">UI components for people who ship... <span className="text-lg md:text-xl" >(more to coming)</span></h1>
+        <h1 className="text-2xl md:text-3xl text-center font-buda ">UI components for people who ship... <span className="text-lg md:text-xl" >(more to coming and sharing code soon)</span></h1>
       </div>
-      <div className="flex-1 flex flex-col justify-center items-center gap-4 m-10" >
+      <div className="flex-1 flex justify-center items-center gap-4 m-10" >
         {componentsLinks.map((component) => (
           <ComponentsAccordion key={component.name} componentsAccordion={component} />
         ))}

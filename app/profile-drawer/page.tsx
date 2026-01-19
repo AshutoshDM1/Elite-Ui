@@ -113,11 +113,9 @@ const ProfileDrawer = () => {
 const ProfileDrawerPage = () => {
     return (
         <div className="max-w-7xl mx-auto px-4 md:px-10">
-
             <div className="min-h-screen flex justify-center items-center relative" >
                 <ProfileDrawer />
             </div>
-
             <div className="absolute top-4 right-4">
                 <ModeToggle />
             </div>
