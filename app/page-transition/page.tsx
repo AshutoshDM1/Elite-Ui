@@ -1,10 +1,14 @@
+import TransitionLink from "@/modules/page-transition/TransitionLink";
+
 const PageTransition = () => {
   return (
-    <div>
-      <h1>Page Transition</h1>
-      <h1>Page Transition</h1>
-      <h1>Page Transition</h1> <h1>Page Transition</h1>{" "}
-      <h1>Page Transition</h1>{" "}
+    <div className="min-h-screen" >
+      <div className="w-full flex justify-center items-center h-full" >
+
+        <TransitionLink href="/" >Home</TransitionLink>
+        <TransitionLink href="/" >Home</TransitionLink>
+        <TransitionLink href="/" >Home</TransitionLink>
+      </div>
     </div>
   );
 };
